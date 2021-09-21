@@ -8,7 +8,11 @@ import {
   Input,
   Button,
   Link,
+  ImageWrapper,
+  Image,
 } from "./styles"
+
+import Logo from '../../assets/logo.svg'
 
 export function SignIn(){
   return (
@@ -32,6 +36,9 @@ export function SignIn(){
         </FormWrapper>
       </ContentWrapper>
 
+      <ImageWrapper>
+        <Image src={Logo}/>
+      </ImageWrapper>
 
       
     </Container>

@@ -21,7 +21,7 @@ export const ContentWrapper = styled.div`
 export const TitleWrapper = styled.div`
   align-items: flex-start;
   h1 {
-    font-size: 30px;
+    font-size: 45px;
     font-family: 'Archivo', sans-serif;
     font-weight: 600;
     color: ${({ theme }) => theme.colors.main_light};
@@ -29,26 +29,29 @@ export const TitleWrapper = styled.div`
   }
 
   h2 {
-    font-size: 15px;
+    font-size: 20px;
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     color: ${({ theme }) => theme.colors.shape};
-    line-height: 20px;
+    line-height: 30px;
   }
 `;
 
 export const FormWrapper = styled.div`
   margin-top: 30px;
-  align-items: center;
+  align-items: flex-start;
+  
 `;
 
 export const Form = styled.form`
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
+  width: 100%;
 `;
 
 export const Input = styled.input`
-  width: 280px;
+  width: 30vw;
   font-size: 15px;
   border-radius: 5px;
   padding: 10px 15px;
@@ -82,4 +85,17 @@ export const Link = styled.a`
   color: ${({ theme }) => theme.colors.shape};
   text-align: center;
   text-decoration: underline;
+`;
+
+export const ImageWrapper = styled.div`
+  width: 50%;
+  
+`;
+
+export const Image = styled.img`
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 100%;
 `;
