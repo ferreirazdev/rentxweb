@@ -65,7 +65,7 @@ export const Input = styled.input`
   }
 `;
 
-export const Button = styled.button`
+export const ButtonLogin = styled.button`
   color: ${({ theme }) => theme.colors.shape};
   margin-top: 10px;
   align-self: center;
@@ -80,7 +80,7 @@ export const Button = styled.button`
   background-color: #DC1637;
 `;
 
-export const Link = styled.a`
+export const CreateAccount = styled.a`
   font-size: 12px;
   color: ${({ theme }) => theme.colors.shape};
   text-align: center;

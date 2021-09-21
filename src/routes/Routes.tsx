@@ -7,7 +7,8 @@ import { SignIn } from '../pages/SignIn'
 export default function Routes(){
   return (
     <Switch>
-      <Route exact path="/" component={SignIn}/>
+      <Route exact path="/" component={Home}/>
+      <Route exact path="/SignIn" component={SignIn}/>
     </Switch>
   )
 }

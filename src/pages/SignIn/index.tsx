@@ -1,3 +1,5 @@
+import { useHistory } from 'react-router-dom'
+
 
 import { 
   Container,
@@ -6,8 +8,8 @@ import {
   FormWrapper,
   Form,
   Input,
-  Button,
-  Link,
+  ButtonLogin,
+  CreateAccount,
   ImageWrapper,
   Image,
 } from "./styles"
@@ -15,6 +17,8 @@ import {
 import Logo from '../../assets/logo.svg'
 
 export function SignIn(){
+  const history = useHistory()
+
   return (
     <Container>
       <ContentWrapper>
@@ -30,8 +34,8 @@ export function SignIn(){
           <Form>
             <Input />
             <Input />
-            <Button>Login</Button>
-            <Link>Criar conta</Link>
+            <ButtonLogin onClick={() => history.push('/')}>Login</ButtonLogin>
+            <CreateAccount>Criar conta</CreateAccount>
           </Form>
         </FormWrapper>
       </ContentWrapper>
