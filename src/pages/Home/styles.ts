@@ -84,11 +84,12 @@ export const FilterWrapper = styled.div`
 `;
 
 export const CarListWrapper = styled.div`
-  background-color: ${({ theme }) => theme.colors.shape};
+  background-color: ${({ theme }) => theme.colors.background_primary};
   width: 100vw;
   padding: 20px 20px;
 `;
 
 export const CarList = styled.div`
-
+  display: flex;
+  flex-wrap: wrap;
 `;
