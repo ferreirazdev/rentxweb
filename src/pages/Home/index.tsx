@@ -23,13 +23,10 @@ import {
   CarList,
 } from './styles';
 
-interface ICarDTO {
-  thumbnail: string;
-  brand: string;
-}
+import { CarDTO } from '../../dtos/CarDTO';
 
 export function Home(){
-  const [cars, setCars] = useState<ICarDTO[]>([]);
+  const [cars, setCars] = useState<CarDTO[]>([]);
   const [loading, setLoading] = useState(true)
 
 
@@ -49,7 +46,6 @@ export function Home(){
   }, []);
 
    
-  console.log(cars[1])
 
   return (
     <Container>
@@ -84,6 +80,8 @@ export function Home(){
               <Car 
                 thumbnail={car.thumbnail}
                 brand={car.brand}
+                name={car.name}
+                rent={car.rent}
               />
             ))}
           </CarList>
